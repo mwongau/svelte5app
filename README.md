@@ -1,3 +1,6 @@
+# Personal site of M Wong
+## This site is built by using SvelteKit, Svelte, JavaScript, HTML and CSS. Web hosting is done by Github Pages.
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
