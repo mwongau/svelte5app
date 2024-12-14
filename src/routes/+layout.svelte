@@ -1,5 +1,6 @@
 <script>
   import { base } from "$app/paths";
+  import '$lib/styles/style.css'
 </script>
 
 <div class="MyHeader" style="background-color: AliceBlue; color: purple">
