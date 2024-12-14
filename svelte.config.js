@@ -12,7 +12,7 @@ const config = {
 		adapter: adapter(),
 		
 		paths: {
-			base: dev ? '' : '/mysite',
+			base: dev ? '' : '/svelte5app',
 		}
 	}	
 };
