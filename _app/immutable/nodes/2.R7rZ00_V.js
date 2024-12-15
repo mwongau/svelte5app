@@ -1,4 +1,0 @@
-import{a as t,t as s}from"../chunks/disclose-version.BHFmYxwS.js";import"../chunks/legacy.EC_HHn_f.js";import{o}from"../chunks/runtime.DkM0aNjD.js";var n=s(`<h1 class="svelte-189axnq">Home</h1> <div class="Intro"><p>Welcome to my personal site. I am a researcher in computer vision and machine learning with Ph.D in Computer Science, 
-M.Sc & B.Sc(Hons.) in Electronic Engineering. I am also interested in web app development. This site is built by using 
-SvelteKit, Svelte 5, Javascript, HTML and CSS. This site is hosted by GitHub Pages.</p></div> <p class="Notice">This site might use cookies in order to improve the web browsing experience of users. If you continue to 
-use this site, it will be assumed you agree to the use of cookies.</p>`,1);function c(e){var i=n();o(4),t(e,i)}export{c as component};
