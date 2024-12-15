@@ -12,7 +12,7 @@ let count = $state(0);
 function select() {
    count +=1;
    if (count > images.length - 1) 
-      {count = 0;}
+      count = 0;
 }
 </script>
 
