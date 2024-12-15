@@ -1,12 +1,18 @@
 <script>
 import { base } from "$app/paths";
 
-let count = $state(1);
+const des = [ "Australian Catholic University, Strathfield Campus, NSW, Australia",
+		"University of Technology Sydney, Building 5",
+		"Homebush Public School, Homebush, NSW, Australia"]
+const alt = [ "acu", "uts", "hps"]
+const images = ["acupy.jpg", "uts-bldg5.jpg", "hps.jpg"]  
+
+let count = $state(0);
 
 function select() {
    count +=1;
-   if (count > 3) 
-      {count = 1;}
+   if (count > images.length - 1) 
+      {count = 0;}
 }
 </script>
 
@@ -15,20 +21,9 @@ function select() {
    <button onclick={select}> <b>Next photo</b></button>
    <br />
 
-   {#if count==1}
-   <h4>{count}: Australian Catholic University, Strathfield Campus, NSW, Australia</h4>
-   <img src="{base}/acupy.jpg" alt="acu">
-   {/if}
-
-   {#if count==2}
-   <h4>{count}: University of Technology Sydney, Building 5</h4>
-   <img src="{base}/uts-bldg5.jpg" alt="uts">
-   {/if}
-
-   {#if count==3}
-   <h4>{count}: Homebush Public School, Homebush, NSW, Australia</h4>
-   <img src="{base}/hps.jpg" alt="hps">
-   {/if}   
+   
+   <h4>{count+1}: {des[count]}</h4>
+   <img src="{base}/{images[count]}" alt="{alt[count]}">   
 </div>
 
 <style>
