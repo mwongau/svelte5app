@@ -1,13 +1,10 @@
 <script>
   import { base } from "$app/paths";
   import '$lib/styles/style.css'
+  import Header from '$lib/components/Header.svelte'
 </script>
 
-<div class="header">
-<h1>M Wong</h1>
-<h3>My personal site</h3>
-<br />
-</div> 
+<Header />
 
 <div class="nav" style="background-color: AliceBlue;">
 <a href="{base}/">Home</a> &nbsp; &nbsp;
@@ -19,10 +16,4 @@
 
 <slot />
 
-<style>
-.header {
-	background-color: Lavender;
-	color: purple;
-	padding: 5px;
-}
-</style>
+
